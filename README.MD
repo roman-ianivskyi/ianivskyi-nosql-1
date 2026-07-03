@@ -20,14 +20,18 @@ MONGO_URI="<рядок підключення>"
 
 9. Встановіть Python 13+ та створіть віртуальне оточення з залежностями з requirements.txt з кореня проекту
 
-10. Запустіть у віртуальному оточення scripts/01-load-data.py
+10. Запустіть у віртуальному оточення 
+```console
+scripts/01-load-data.py
+```
 
 11. Запустіть:
+```console
 mongosh $MONGO_URI --file scripts/02-transform.js
 mongosh $MONGO_URI --file queries/part2_queries.js
 mongosh $MONGO_URI --file queries/part3_aggregations.js
 mongosh $MONGO_URI --file queries/part4_indexes.js
-
+```
 
 ### Схема даних
 ```json 
